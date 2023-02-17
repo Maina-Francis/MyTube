@@ -2,6 +2,15 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import { Box } from "@mui/material"; //Box is a Simple div element from MUI
 
+// import components
+import {
+  Feed,
+  ChannelDetail,
+  Navbar,
+  SearchFeed,
+  VideoDetail,
+} from "./components";
+
 const App = () => {
   return (
     <BrowserRouter>
