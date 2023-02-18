@@ -2,10 +2,18 @@ import React from "react";
 import { Stack, Box } from "@mui/material";
 import { VideoCard, ChannelCard } from "./";
 
-const Videos = ({ videos }) => {
+const Videos = ({ videos, direction }) => {
+  // Loader
+  if (!videos?.length) return "Loading...";
+
   // console.log(videos);
   return (
-    <Stack direction="row" flexWrap="wrap" justifyContent="start" gap={2}>
+    <Stack
+      direction={direction || "row"}
+      flexWrap="wrap"
+      justifyContent="start"
+      gap={2}
+    >
       {videos.map((item, index) => (
         <Box key={index}>
           {/* if we our item has an id of videoId, it must be a video */}
