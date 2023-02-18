@@ -1,13 +1,15 @@
 import axios from "axios";
 
-const BASE_URL = "https://youtube-v31.p.rapidapi.com";
+// require("dotenv").config();
 
+const BASE_URL = "https://youtube-v31.p.rapidapi.com";
+console.log(process.env)
 const options = {
   params: {
     maxResults: "50",
   },
   headers: {
-    "X-RapidAPI-Key": process.env.REACT_RAPID_APP_API_KEY,
+    "X-RapidAPI-Key": process.env.REACT_APP_RAPID_API_KEY,
     "X-RapidAPI-Host": "youtube-v31.p.rapidapi.com",
   },
 };
