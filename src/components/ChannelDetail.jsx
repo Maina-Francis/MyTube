@@ -8,17 +8,29 @@ import { fetchFromAPI } from "../utils/fetchFromAPI";
 const ChannelDetail = () => {
   const [channelDetail, setChannelDetail] = useState(null);
 
+  const [videos, setVideos] = useState([]);
+
   const { id } = useParams();
 
-  console.log(channelDetail);
+  // console.log(channelDetail, videos);
 
   useEffect(() => {
-    fetchFromAPI(`channels?part ="snippet&id =${id}`).then((data) =>
+    // fetch channel details
+    fetchFromAPI(`channels?part =snippet&id =${id}`).then((data) =>
       setChannelDetail(data?.items[0])
+    );
+
+    // fetch videos belonging to the specific channel
+    fetchFromAPI(`search?channelId=${id}&part=snippet&order=date`).then(
+      (data) => setVideos(data?.items)
     );
   }, [id]);
 
-  return <div>ChannelDetail</div>;
+  return (
+    <Box minHeight="95vh">
+      <Box></Box>
+    </Box>
+  );
 };
 
 export default ChannelDetail;
