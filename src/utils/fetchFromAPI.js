@@ -3,7 +3,7 @@ import axios from "axios";
 // require("dotenv").config();
 
 const BASE_URL = "https://youtube-v31.p.rapidapi.com";
-console.log(process.env)
+// console.log(process.env)
 const options = {
   params: {
     maxResults: "50",
