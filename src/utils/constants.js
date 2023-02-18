@@ -19,7 +19,7 @@ export const logo = "https://i.ibb.co/s9Qys2j/logo.png";
 // Array of categories that we'll use in the sidebar
 export const categories = [
   { name: "New", icon: <HomeIcon /> },
-  { name: "JS Mastery", icon: <CodeIcon /> },
+  { name: "freeCodeCamp.org", icon: <CodeIcon /> },
   { name: "Coding", icon: <CodeIcon /> },
   { name: "ReactJS", icon: <CodeIcon /> },
   { name: "NextJS", icon: <CodeIcon /> },
