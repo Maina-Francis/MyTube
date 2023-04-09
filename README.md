@@ -43,9 +43,9 @@ Once you have found the video you want to watch, simply click on it to start pla
 ## Technology Stack
 The app is built using the following technologies:
 
-React
-Material-UI
-RapidApi
+1. React
+2. Material-UI
+3. RapidApi
 
 ## Contributing
 Contributions are welcome! If you have any suggestions or feature requests, please open an issue or submit a pull request.
